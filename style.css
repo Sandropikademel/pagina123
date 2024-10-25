@@ -1,21 +1,17 @@
 body{
-
-margin: 0;
-padding:0;
-font-family: Arial, Helvetica, sans-serif;
-
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
 }
 
-</header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+     
+    display: flex center;
+    justify-content: center space-between;
     background-color: aquamarine;
     padding: 10 px 20 px;
-    box-shadow: 0 4 px 8 px rgba(0, 0, 0 ,0);
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0,);
 
-
-    
 }
 .navbar {
     display: flex;
@@ -146,3 +142,6 @@ font-family: Arial, Helvetica, sans-serif;
 .next {
     right: 10px;
 }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
