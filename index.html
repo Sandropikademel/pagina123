@@ -4,39 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura ao Redor do Mundo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <h1>Arquitetura ao Redor do Mundo</h1>
-        <p>Explorando as maravilhas arquitetônicas que definem culturas e eras.</p>
+    <header class="header">
+        <div class="overlay">
+            <h1>Arquitetura ao Redor do Mundo</h1>
+            <p>Um mergulho profundo nas maravilhas arquitetônicas que transcendem fronteiras e eras.</p>
+        </div>
     </header>
+
     <main>
+        <!-- Introdução -->
+        <section class="intro">
+            <div class="container">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    A arquitetura é a expressão física da criatividade e da funcionalidade. Este site explora algumas das construções mais icônicas do mundo, apresentando suas histórias, estilos e significados culturais. 
+                </p>
+            </div>
+        </section>
+
+        <!-- Galeria de Destaques -->
         <section class="gallery">
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300?text=Burj+Khalifa" alt="Burj Khalifa">
-                <h2>Burj Khalifa</h2>
-                <p>Dubai, Emirados Árabes Unidos</p>
+            <div class="container">
+                <h2>Marcos Icônicos</h2>
+                <div class="grid">
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x400?text=Burj+Khalifa" alt="Burj Khalifa">
+                        <div class="card-content">
+                            <h3>Burj Khalifa</h3>
+                            <p>
+                                Localizado em Dubai, o Burj Khalifa é o edifício mais alto do mundo e um símbolo de modernidade e inovação arquitetônica.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x400?text=Eiffel+Tower" alt="Torre Eiffel">
+                        <div class="card-content">
+                            <h3>Torre Eiffel</h3>
+                            <p>
+                                Construída para a Exposição Universal de 1889, a Torre Eiffel é um ícone global de elegância e engenharia francesa.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x400?text=Great+Wall" alt="Muralha da China">
+                        <div class="card-content">
+                            <h3>Muralha da China</h3>
+                            <p>
+                                Uma das maiores obras de engenharia da humanidade, a Muralha da China reflete a determinação e habilidade do povo chinês.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300?text=Eiffel+Tower" alt="Torre Eiffel">
-                <h2>Torre Eiffel</h2>
-                <p>Paris, França</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300?text=Great+Wall" alt="Muralha da China">
-                <h2>Muralha da China</h2>
-                <p>China</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300?text=Sydney+Opera+House" alt="Ópera de Sydney">
-                <h2>Ópera de Sydney</h2>
-                <p>Sydney, Austrália</p>
+        </section>
+
+        <!-- Seção de Destaques -->
+        <section class="highlights">
+            <div class="container">
+                <h2>Arquitetura ao Longo dos Séculos</h2>
+                <p>
+                    Desde templos antigos até arranha-céus modernos, cada estrutura conta uma história única. A arquitetura conecta culturas e períodos, oferecendo uma janela para o passado enquanto molda o futuro.
+                </p>
+                <blockquote>
+                    "A arquitetura deve falar de seu tempo e lugar, mas ansiar por intemporalidade." – Frank Gehry
+                </blockquote>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Arquitetura ao Redor do Mundo. Todos os direitos reservados.</p>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Arquitetura ao Redor do Mundo. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>

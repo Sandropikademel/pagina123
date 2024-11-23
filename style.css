@@ -5,81 +5,138 @@
     box-sizing: border-box;
 }
 
-/* Estilização geral */
+/* Fontes e cores */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #f4f4f9;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background: #f9f9f9;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 300;
+    color: #555;
 }
 
 /* Cabeçalho */
-.main-header {
-    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+.header {
+    height: 80vh;
+    background: url('https://via.placeholder.com/1920x800?text=Arquitetura+Global') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    text-align: center;
+    position: relative;
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.6);
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
 }
 
-.main-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.main-header p {
+.header p {
     font-size: 1.2rem;
-    opacity: 0.9;
+}
+
+/* Seção de introdução */
+.intro {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+.intro .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Galeria */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
+    padding: 3rem 0;
+}
+
+.gallery .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.gallery-item {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.gallery-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.card:hover {
+    transform: scale(1.03);
 }
 
-.gallery-item img {
+.card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    object-fit: cover;
 }
 
-.gallery-item h2 {
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
     font-size: 1.5rem;
-    margin: 1rem 1rem 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.gallery-item p {
-    margin: 0 1rem 1rem;
+.card-content p {
     font-size: 1rem;
     color: #666;
 }
 
-/* Rodapé */
-footer {
+/* Destaques */
+.highlights {
+    background: #f4f4f4;
+    padding: 3rem 0;
+}
+
+.highlights .container {
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
-    padding: 1rem;
-    background: #2c3e50;
+}
+
+.highlights blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #444;
+    margin-top: 1.5rem;
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+}
+
+/* Rodapé */
+.footer {
+    background: #333;
     color: #fff;
-    margin-top: auto;
+    text-align: center;
+    padding: 1.5rem 0;
 }
