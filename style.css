@@ -1,189 +1,85 @@
-/* Reset de estilos */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fontes */
+/* Estilização geral */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Layout e estrutura */
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 30px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header nav ul li {
-    margin-left: 30px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ff7f00;
-}
-
-/* Seção Introdução */
-#intro {
-    background: linear-gradient(to right, #333, #444);
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-}
-
-#intro h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#intro p {
-    font-size: 1.2rem;
-    width: 70%;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Seção de Construções Famosas */
-#famous-buildings {
-    padding: 80px 0;
-    background-color: #fff;
-    text-align: center;
-}
-
-#famous-buildings h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.building {
+    color: #333;
+    background-color: #f4f4f9;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
 }
 
-.building:hover {
+/* Cabeçalho */
+.main-header {
+    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.building img {
+.gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: opacity 0.5s;
+    display: block;
 }
 
-.building img:hover {
-    opacity: 0.8;
+.gallery-item h2 {
+    font-size: 1.5rem;
+    margin: 1rem 1rem 0.5rem;
 }
 
-.info {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 0 0 10px 10px;
-}
-
-.info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.info p {
+.gallery-item p {
+    margin: 0 1rem 1rem;
     font-size: 1rem;
-    color: #ccc;
+    color: #666;
 }
 
 /* Rodapé */
 footer {
-    background-color: #1a1a1a;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-}
-
-footer a {
-    color: #ff7f00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-footer a:hover {
+    padding: 1rem;
+    background: #2c3e50;
     color: #fff;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    header nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    #intro p {
-        width: 90%;
-        font-size: 1rem;
-    }
-
-    .building {
-        margin-bottom: 20px;
-    }
-
-    #famous-buildings h2 {
-        font-size: 2rem;
-    }
-
-    .info h3 {
-        font-size: 1.5rem;
-    }
+    margin-top: auto;
 }

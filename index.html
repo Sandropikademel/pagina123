@@ -1,65 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arquitetura ao Redor do Mundo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Arquitetura ao Redor do Mundo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#intro">Introdução</a></li>
-                    <li><a href="#famous-buildings">Construções Famosas</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="main-header">
+        <h1>Arquitetura ao Redor do Mundo</h1>
+        <p>Explorando as maravilhas arquitetônicas que definem culturas e eras.</p>
     </header>
-
-    <section id="intro">
-        <div class="container">
-            <h2>As Maravilhas da Arquitetura Global</h2>
-            <p>Explore as construções mais icônicas e representativas do mundo, que transcendem fronteiras e representam a engenhosidade humana.</p>
-        </div>
-    </section>
-
-    <section id="famous-buildings">
-        <div class="container">
-            <h2>Construções Icônicas</h2>
-            <div class="building">
-                <img src="https://source.unsplash.com/1600x900/?eiffel-tower" alt="Torre Eiffel">
-                <div class="info">
-                    <h3>Torre Eiffel</h3>
-                    <p>Paris, França – A Torre Eiffel é uma maravilha da engenharia, simbolizando a criatividade do século XIX.</p>
-                </div>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x300?text=Burj+Khalifa" alt="Burj Khalifa">
+                <h2>Burj Khalifa</h2>
+                <p>Dubai, Emirados Árabes Unidos</p>
             </div>
-            <div class="building">
-                <img src="https://source.unsplash.com/1600x900/?colosseum" alt="Coliseu">
-                <div class="info">
-                    <h3>Coliseu</h3>
-                    <p>Roma, Itália – Um dos maiores ícones da Roma Antiga, símbolo de poder e resistência.</p>
-                </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x300?text=Eiffel+Tower" alt="Torre Eiffel">
+                <h2>Torre Eiffel</h2>
+                <p>Paris, França</p>
             </div>
-            <div class="building">
-                <img src="https://source.unsplash.com/1600x900/?burj-khalifa" alt="Burj Khalifa">
-                <div class="info">
-                    <h3>Burj Khalifa</h3>
-                    <p>Dubai, Emirados Árabes Unidos – A estrutura mais alta do mundo, um verdadeiro marco da inovação arquitetônica.</p>
-                </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x300?text=Great+Wall" alt="Muralha da China">
+                <h2>Muralha da China</h2>
+                <p>China</p>
             </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="container">
-            <p>Entre em contato: <a href="mailto:contato@arquitetura.com">contato@arquitetura.com</a></p>
-        </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400x300?text=Sydney+Opera+House" alt="Ópera de Sydney">
+                <h2>Ópera de Sydney</h2>
+                <p>Sydney, Austrália</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Arquitetura ao Redor do Mundo. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
